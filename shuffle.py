@@ -91,8 +91,3 @@ while order:
 	lines_saved = current_chunk_length + epoch * lines_in_memory
 	epoch += 1
 	print "pass %s complete (%s lines saved)" % ( epoch, lines_saved )
-<<<<<<< HEAD
-		
-=======
-		
->>>>>>> 3b65d5541989d1458ffbd1801e1c66326f13e709
