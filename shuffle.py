@@ -18,7 +18,11 @@ except IndexError:
 try:
 	lines_in_memory = int( sys.argv[4] )
 except IndexError:
+<<<<<<< HEAD
 	lines_in_memory = 1000000
+=======
+	lines_in_memory = 25000
+>>>>>>> 3b65d5541989d1458ffbd1801e1c66326f13e709
 	
 print "caching %s lines at a time..." % ( lines_in_memory )
 	
@@ -91,4 +95,8 @@ while order:
 	lines_saved = current_chunk_length + epoch * lines_in_memory
 	epoch += 1
 	print "pass %s complete (%s lines saved)" % ( epoch, lines_saved )
+<<<<<<< HEAD
 		
+=======
+		
+>>>>>>> 3b65d5541989d1458ffbd1801e1c66326f13e709
