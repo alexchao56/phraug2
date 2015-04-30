@@ -12,7 +12,7 @@ import argparse
 
 def construct_line( label, line ):
 	new_line = []
-	if float( label ) == 0.0:
+	if label == "" or float( label ) == 0.0:
 		label = "0"
 	new_line.append( label )
 	
