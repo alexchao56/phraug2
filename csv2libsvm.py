@@ -12,7 +12,7 @@ import argparse
 
 def construct_line( label, line ):
 	new_line = []
-	if label == "" or float( label ) == 0.0:
+	if float( label ) == 0.0:
 		label = "0"
 	new_line.append( label )
 	
@@ -53,6 +53,9 @@ for line in reader:
 	else:
 		label = line.pop( args.label_index )
 		
-	new_line = construct_line( label, line )
+	try:
+		new_line = construct_line( label, line )
+	except ValueError:
+		continue
 	o.write( new_line )
 	
