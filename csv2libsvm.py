@@ -56,6 +56,6 @@ for line in reader:
 	try:
 		new_line = construct_line( label, line )
 	except ValueError:
+		print "Skipping line... Missing value in Target column"
 		continue
 	o.write( new_line )
-	
